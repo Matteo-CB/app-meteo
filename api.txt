@@ -1,0 +1,1 @@
+`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&lang=${lang}&appid=7585221fbcead099c4e4c4bb6fd3b68f&units=metric`

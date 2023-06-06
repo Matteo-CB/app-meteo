@@ -48,11 +48,22 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 578px) {
+        &{
+            flex-direction: column;
+            height: 200px;
+        }
+    }
     input{
         background: $bg;
         padding: 10px;
         border: none;
         outline: none;
+        @media screen and (max-width: 888px) {
+            &{
+                width: 200px;
+            }
+        }
         &:focus{
             outline: 2px solid $after;
         }
@@ -60,16 +71,30 @@ header{
             color: $color;
             font-family: $font;
             font-size: 0.8rem;
+            @media screen and (max-width: 888px) {
+                &{
+                    font-size: 0.6rem;
+                }
+            }
 
         }
     }
     h1{
         font-family: $font2;
         color: $h1;
-
+        @media screen and (max-width: 888px) {
+            &{
+                font-size: 1.3rem;
+            }
+        }
     }
 }
 .card-container{
+    @media screen and (max-width: 800px) {
+        &{
+            font-size: 0.8rem;
+        }
+    }
     display: grid;
     align-items: center;
     justify-content: center;
@@ -80,6 +105,11 @@ header{
         display: inline-block;
         text-align: center;
         padding: 25px;
+        @media screen and (max-width: 800px) {
+            &{
+                padding: 10px;
+            }
+        }
         margin: 25px;
         .grid-card{
             display: grid;
@@ -108,6 +138,11 @@ header{
             }
             .heure{
                 grid-area: heure;
+            }
+            @media screen and (max-width: 578px) {
+                &{
+                    display: block;
+                }
             }
             
         }

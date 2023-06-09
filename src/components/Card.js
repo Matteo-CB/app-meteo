@@ -17,7 +17,8 @@ const Card = ({ data }) => {
   };
 
   const formatTimestampToTime = (timestamp, timezoneOffset) => {
-    const date = new Date(timestamp * 1000 + timezoneOffset * 1000);
+    const offsetInSeconds = timezoneOffset * 3600;
+    const date = new Date((timestamp + offsetInSeconds)* 1000);
     return date.toLocaleString("fr-FR", options);
   };
 
@@ -61,18 +62,7 @@ const Card = ({ data }) => {
             <p>Latitude : {data.coord.lat}</p>
             <p>Longitude : {data.coord.lon}</p>
           </div>
-          <div className="heure">
-            <h4>Heure locale : </h4>
-            <p>{formatTimestampToTime(data.dt, data.timezone)}</p>
-            <p>
-              Lever du soleil :{" "}
-              {formatTimestampToTime(data.sys.sunrise, data.timezone)}
-            </p>
-            <p>
-              Coucher du soleil :{" "}
-              {formatTimestampToTime(data.sys.sunset, data.timezone)}
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>

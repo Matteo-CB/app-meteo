@@ -21,7 +21,7 @@ Avant de pouvoir utiliser cette application, assurez-vous d'avoir les éléments
 
 ## Guide d'installation
 
-1. Clonez le dépôt de l'application depuis GitHub : `git clone https://github.com/votre-utilisateur/weather-app.git`
+1. Clonez le dépôt de l'application depuis GitHub : `git clone https://github.com/Matteo-CB/weather-app.git`
 
 2. Accédez au répertoire de l'application : `cd weather-app`
 

@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Preview de l'app](./p3.png)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+L'application Weather App vous permet d'obtenir les détails météorologiques d'une ville précise. Elle utilise l'API OpenWeatherData pour récupérer les données météorologiques en temps réel. Voici comment vous pouvez utiliser cette application :
 
-### `npm start`
+## Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Recherche de la météo : Vous pouvez rechercher la météo d'une ville en spécifiant son nom. L'application récupère les informations météorologiques correspondantes de l'API OpenWeatherData.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Affichage des détails météo : Une fois que vous avez effectué une recherche, l'application affiche les détails météorologiques de la ville, tels que la température, l'humidité, la vitesse du vent, etc.
 
-### `npm test`
+## Prérequis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Avant de pouvoir utiliser cette application, assurez-vous d'avoir les éléments suivants :
 
-### `npm run build`
+- Node.js installé sur votre machine
+- Un navigateur web compatible
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Guide d'installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clonez le dépôt de l'application depuis GitHub : `git clone https://github.com/votre-utilisateur/weather-app.git`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Accédez au répertoire de l'application : `cd weather-app`
 
-### `npm run eject`
+3. Installez les dépendances requises en exécutant la commande suivante : `npm i`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Lancez l'application en exécutant la commande : `npm start`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Ouvrez votre navigateur et accédez à l'URL suivante : `http://localhost:3000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Vous devriez maintenant voir l'application Weather App et pouvoir commencer à l'utiliser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Limitations
 
-## Learn More
+Veuillez noter les limitations suivantes de cette application :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Les données météorologiques disponibles dépendent de l'API OpenWeatherData. Par conséquent, la disponibilité et l'exhaustivité des informations peuvent varier.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- L'application nécessite une connexion Internet active pour récupérer les données météorologiques en temps réel.
+
+
